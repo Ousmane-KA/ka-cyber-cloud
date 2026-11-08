@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ousmane Ka — Ingénieur Infrastructure, Cloud & DevOps</title>
+  <meta name="description" content="Portfolio d'Ousmane Ka : ingénieur Infrastructure, Cloud & DevOps. CI/CD, Kubernetes, GitOps, Terraform, Ansible, AWS, Azure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a href="#top" class="logo">&gt;_ <span>ousmane.ka</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#experience">Parcours</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" aria-label="Changer de thème">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="mono kicker">// bonjour, je suis</p>
+      <h1>Ousmane Ka</h1>
+      <p class="mono role">Ingénieur Infrastructure, Cloud &amp; DevOps</p>
+      <p class="mono typed-line">Je construis <span id="typed"></span><span class="cursor">|</span></p>
+      <p class="lead">Ingénieur DevOps passionné et rigoureux : infrastructures hybrides <strong>cloud / on-premise</strong>, automatisation <strong>CI/CD</strong>, <strong>conteneurisation</strong> et <strong>GitOps</strong>, avec une attention constante portée à la sécurité.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Voir mes projets</a>
+        <a class="btn" href="CV.pdf" download>Télécharger mon CV</a>
+      </div>
+      <ul class="stats">
+        <li><b data-count="3" data-suffix="+">0</b><span>ans d'expérience</span></li>
+        <li><b data-count="3" data-suffix="">0</b><span>entreprises</span></li>
+        <li><b data-count="3" data-suffix="">0</b><span>projets présentés</span></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <h2><span class="mono">01.</span> À propos</h2>
+      <div class="about-grid">
+        <div>
+          <p>Fort d'un parcours en <strong>grande entreprise</strong> et d'une veille technologique constante, j'apporte une réelle expertise technique et un vrai esprit d'équipe sur des projets structurants.</p>
+          <p>J'ai déployé et exploité des infrastructures hybrides (VMware et AWS), automatisé des chaînes CI/CD sécurisées (GitLab CI, Ansible, Trivy, SonarQube) et assuré le run de clusters Kubernetes. Aujourd'hui ingénieur DevOps chez <strong>Diapason</strong>, je pousse les bonnes pratiques <strong>Infrastructure as Code</strong> et <strong>GitOps</strong>.</p>
+          <p class="meta">🗣 Français (langue maternelle) · Anglais (B2)</p>
+        </div>
+        <pre class="terminal mono" aria-label="Profil en format terminal"><span class="c-dim">$</span> whoami
+ousmane.ka
+<span class="c-dim">$</span> cat focus.txt
+- Cloud   : AWS / Azure / VMware
+- DevOps  : K8s, Argo CD, Terraform
+- CI/CD   : GitLab CI, Jenkins
+- Sécurité: Trivy, SonarQube
+<span class="c-dim">$</span> status
+<span class="c-ok">●</span> ingénieur DevOps @ Diapason</pre>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2><span class="mono">02.</span> Compétences</h2>
+      <div class="cards skills">
+        <article class="card">
+          <h3>☁ Cloud & Virtualisation</h3>
+          <div class="tags"><span>AWS</span><span>Azure</span><span>VMware ESXi</span><span>vSphere</span><span>Proxmox</span></div>
+        </article>
+        <article class="card">
+          <h3>📦 DevOps & Conteneurisation</h3>
+          <div class="tags"><span>Kubernetes</span><span>Docker</span><span>Argo CD</span><span>Helm</span><span>Terraform</span><span>Ansible</span></div>
+        </article>
+        <article class="card">
+          <h3>🛡 CI/CD & Qualité</h3>
+          <div class="tags"><span>GitLab CI</span><span>Jenkins</span><span>SonarQube</span><span>Trivy</span></div>
+        </article>
+        <article class="card">
+          <h3>🖥 Systèmes & Web</h3>
+          <div class="tags"><span>Linux (Red Hat, Debian)</span><span>Windows Server</span><span>Nginx</span><span>HAProxy</span><span>IIS</span></div>
+        </article>
+        <article class="card">
+          <h3>📊 Observabilité & DB</h3>
+          <div class="tags"><span>Prometheus</span><span>Grafana</span><span>Splunk</span><span>Centreon</span><span>MySQL</span><span>PostgreSQL</span></div>
+        </article>
+        <article class="card">
+          <h3>⌨ Scripting & Code</h3>
+          <div class="tags"><span>Python</span><span>Bash</span><span>PowerShell</span><span>Java</span><span>SQL</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <h2><span class="mono">03.</span> Projets</h2>
+      <div class="filters" id="filters"></div>
+      <div class="cards projects" id="project-list"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="reveal">
+      <h2><span class="mono">04.</span> Parcours</h2>
+      <div class="timeline" id="timeline"></div>
+
+      <h3 class="sub">Formation</h3>
+      <div class="cards skills" id="education"></div>
+
+      <h3 class="sub">Centres d'intérêt</h3>
+      <div class="tags certs">
+        <span>🎨 Musées</span>
+        <span>🎬 Cinéma</span>
+        <span>🎵 Musique (RnB, Afro, Pop)</span>
+        <span>📖 Manga (Naruto)</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <h2><span class="mono">05.</span> Contact</h2>
+      <p class="lead">Un projet structurant, une mission DevOps ou simplement envie d'échanger ? Écrivez-moi.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:ousmaneka102@gmail.com">ousmaneka102@gmail.com</a>
+        <a class="btn" href="https://github.com/ousmane-ka" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://ousmane-ka.github.io/MyWebCV/" target="_blank" rel="noopener">CV en ligne</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="mono">© <span id="year"></span> Ousmane Ka · Fait à la main en HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
