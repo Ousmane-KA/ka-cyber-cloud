@@ -48,10 +48,12 @@ strong { color: var(--accent); font-weight: 600; }
 nav { display: flex; align-items: center; gap: 26px; font-size: .92rem; }
 nav a { color: var(--muted); transition: color .2s; }
 nav a:hover, nav a.active { color: var(--accent); }
-#theme, .burger {
+#theme, #lang, .burger {
   background: none; border: 1px solid var(--border); color: var(--text);
   border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: 1rem;
 }
+#lang { font-family: var(--mono); font-weight: 600; font-size: .85rem; letter-spacing: .04em; }
+#lang:hover, #theme:hover { border-color: var(--accent); color: var(--accent); }
 .burger { display: none; }
 
 /* LAYOUT */
@@ -71,6 +73,7 @@ h1 { font-size: clamp(2.6rem, 8vw, 5rem); line-height: 1.05; letter-spacing: -.0
 .cursor { animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .lead { max-width: 640px; color: var(--muted); font-size: 1.1rem; }
+#projects .lead { margin-bottom: 24px; }
 
 .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
 .btn {
@@ -156,7 +159,7 @@ footer { text-align: center; padding: 60px 20px 40px; color: var(--muted); font-
     max-height: 0; overflow: hidden; transition: max-height .3s;
   }
   nav.open { max-height: 400px; padding: 10px 0; }
-  nav a, #theme { padding: 12px 24px; width: 100%; text-align: left; border: 0; }
+  nav a, #theme, #lang { padding: 12px 24px; width: 100%; text-align: left; border: 0; }
   .about-grid { grid-template-columns: 1fr; }
   section { padding-top: 80px; }
 }
