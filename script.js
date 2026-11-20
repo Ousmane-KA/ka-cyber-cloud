@@ -230,6 +230,32 @@ const PROJECTS = [
     repo: "https://github.com/Ousmane-KA/k8s-n8n-postgresql.git",
     demo: "",
   },
+  {
+    title: {
+      fr: "Déploiement d'un LLM local avec Docker",
+      en: "Local LLM deployment with Docker"
+    },
+    year: "2026",
+    category: ["devops", "ai", "self-hosted"],
+    desc: {
+      fr: "Déploiement d'un environnement d'intelligence artificielle local sur une VM Linux avec Docker Compose. Intégration d'Ollama pour l'exécution de modèles LLM (Qwen 2.5) et d'Open WebUI pour fournir une interface conversationnelle type ChatGPT. Mise en place d'une architecture conteneurisée avec persistance des données et optimisation des ressources pour un environnement de laboratoire à faible capacité.",
+      en: "Deployment of a self-hosted AI environment on a Linux VM using Docker Compose. Integration of Ollama to run local LLM models (Qwen 2.5) and Open WebUI to provide a ChatGPT-like conversational interface. Implementation of a containerized architecture with persistent storage and resource optimization for a low-resource laboratory environment."
+    },
+    tags: [
+      "Docker",
+      "Docker Compose",
+      "Ollama",
+      "Open WebUI",
+      "LLM",
+      "Qwen 2.5",
+      "Linux",
+      "AI",
+      "Self-hosted"
+    ],
+    repo: "https://github.com/Ousmane-KA/Internal-AI-Chat-Plateforme/blob/main/readme.md",
+    demo: "",
+},
+
 ];
 
 const EXPERIENCES = [
